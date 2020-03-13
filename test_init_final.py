@@ -2369,7 +2369,7 @@ while True:
 					
 			########## 적혈 검색 ############
 			if message.content.startswith('!적'):
-				searchEnermy = message.content[3:]	#명령어 + 빈칸 !, 적, (빈칸) 해서 3임, 명어를 바꾸면 숫자 변경 필요
+				searchEnermy = message.[len(content[25])+1:]	#명령어 + 빈칸 !, 적, (빈칸) 해서 3임, 명어를 바꾸면 숫자 변경 필요
 
 				wks = gc.open('파일이름').worksheet('시트이름')
 
