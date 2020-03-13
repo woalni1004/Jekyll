@@ -2368,7 +2368,7 @@ while True:
 					await client.get_channel(channel).send( '```제대로 된 아이디를 입력해주세요!\n```', tts=False)
 					
 			########## 적혈 검색 ############
-			if message.content.startswith('!적'):
+			if message.content.startswith(command[25] + " "):
 				searchEnermy = message.[len(content[25])+1:]	#명령어 + 빈칸 !, 적, (빈칸) 해서 3임, 명어를 바꾸면 숫자 변경 필요
 
 				wks = gc.open('파일이름').worksheet('시트이름')
