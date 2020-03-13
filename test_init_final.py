@@ -2389,10 +2389,10 @@ while True:
 					if SearchEnermy == name :
 						enermychk = 1
 						
-				if enermychk = 1
+				if searchEnermy = 1:
 					information = ":skull_crossbones: [" + SearchEnermy + "] 이 혈 적임!"
 				else :
-					information = ":) [" + SearchEnermy[i] + '] 이 혈 적아님!'
+					information = ":) [" + SearchEnermy + '] 이 혈 적아님!'
 					
 				embed = discord.Embed(
 					description= information,
