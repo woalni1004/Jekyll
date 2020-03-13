@@ -2366,6 +2366,39 @@ while True:
 						await client.get_channel(channel).send( '```킬 목록에 등록되어 있지 않습니다!\n```', tts=False)
 				else:
 					await client.get_channel(channel).send( '```제대로 된 아이디를 입력해주세요!\n```', tts=False)
+					
+			########## 적혈 검색 ############
+			if message.content.startswith(' !적' ):
+				searchEnermy = message.content[3:]	#명령어 + 빈칸 !, 적, (빈칸) 해서 3임, 명어를 바꾸면 숫자 변경 필요
+
+				wks = gc.open('파일이름').worksheet('시트이름')
+
+				enermy_name = []
+
+				enermy_list = wks.range('L6:L200')	#적혈 이름 들어간 열 (여기선 L6 ~ L200 까지 들어감)
+
+				for i in range(len(enermy_list)):d
+					if enermy_list[i].value != '':
+						enermy_name.append(enermy_list[i].value)
+					else :
+						break
+					
+				enermychk = 0
+			
+				for name in enermy_name :
+					if SearchEnermy == name :
+						enermychk = 1
+						
+				if enermychk = 1
+					information = ":skull_crossbones: [" + SearchEnermy + "] 이 혈 적임!"
+				else :
+					information = ":) [" + SearchEnermy[i] + '] 이 혈 적아님!'
+					
+				embed = discord.Embed(
+					description= information,
+					color=0xff00ff
+					)
+				await cllent.get_channel(channel).send(embed=embed, tts=False)					
 
 	client.loop.create_task(task())
 	try:
