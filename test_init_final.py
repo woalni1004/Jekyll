@@ -2389,7 +2389,7 @@ while True:
 					if SearchEnermy == name :
 						enermychk = 1
 						
-				if searchEnermy = 1:
+				if searchEnermy == 1:
 					information = ":skull_crossbones: [" + SearchEnermy + "] 이 혈 적임!"
 				else :
 					information = ":) [" + SearchEnermy + '] 이 혈 적아님!'
