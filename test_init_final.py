@@ -2377,7 +2377,7 @@ while True:
 
 				enermy_list = wks.range('L6:L200')	#적혈 이름 들어간 열 (여기선 L6 ~ L200 까지 들어감)
 
-				for i in range(len(enermy_list)):d
+				for i in range(len(enermy_list)):
 					if enermy_list[i].value != '':
 						enermy_name.append(enermy_list[i].value)
 					else :
